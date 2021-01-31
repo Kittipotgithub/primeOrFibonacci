@@ -1,0 +1,5 @@
+<input type="number" [ngModel]="number" (blur)="inputNumber($event)">
+<select (change)="selectType($event)">
+  <option *ngFor="let item of listType" [ngValue]="item">{{ item }} </option>
+</select>
+{{flag}}
